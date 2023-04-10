@@ -334,7 +334,7 @@ contexts:
     - include: jsx-single-quoted-prop
     - include: jsx-evaluated-code
   jsx-tag-close:
-    - match: '(</)([^>]+)(>)|(\/>)'
+    - match: '(</)([^>]*)(>)|(\/>)'
       scope: tag.close.coffee
       captures:
         1: punctuation.definition.tag.begin.coffee
@@ -344,7 +344,7 @@ contexts:
     - match: <\s*>
       scope: invalid.illegal.tag.incomplete.coffee
   jsx-tag-open:
-    - match: "(<)([a-zA-Z0-9:.]+)"
+    - match: "(<)([a-zA-Z0-9:.]*)"
       captures:
         1: punctuation.definition.tag.begin.coffee
         2: entity.name.tag.coffee
