@@ -1,3 +1,5 @@
+NOTE: forked to add support of short syntax for JSX fragments (`<>` and `</>`)
+
 # sublime-cjsx
 
 Sublime syntax highlighting for CJSX
